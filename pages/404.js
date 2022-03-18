@@ -6,7 +6,7 @@ const Ilegal = () => {
           451 ㅡ Unavailable For Legal Reasons
         </h1>
         <p className="text-lg pt-5 italic">
-          why to show reguler 404 page when I can make it lil bit mysterious?
+	  Why show a generic 404 when I can make it sound mysterious? It seems you've found something that used to exist, or you spelled something wrong. I'm guessing you spelled something wrong. Can you double check that URL?
         </p>
       </div>
     </>
