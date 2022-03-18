@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  background: rgb(16, 8, 24);
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter";
   font-family: "Inter";
 }
 
-html,
-body {
-  background: #0b0f13;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Inter";
-  color: #fff;
+.__orange {
+  color: #ffb900;
+}
+
+.__mono {
+  font-family: "Space Mono";
 }

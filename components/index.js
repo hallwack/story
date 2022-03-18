@@ -1,4 +1,4 @@
-import Avatar from './Avatar'
-import EmailForm from './EmailForm'
+import Avatar from "./Avatar";
+import EmailForm from "./EmailForm";
 
-export { Avatar, EmailForm }
+export { Avatar, EmailForm };
