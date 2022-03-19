@@ -15,33 +15,23 @@ const Home = ({ posts }) => {
         {posts.map((post, index) => (
           <Link href={"/story/" + post.slug} passHref key={index}>
             {/* post card */}
-            <div className="mx-auto border my-10 py-5 px-10 border-gray-600 rounded-lg xs:w-2/3 sm:w-2/3 md:w-1/2 w-3/4 cursor-pointer">
+            <div className="xs:w-2/3 mx-auto my-10 w-3/4 cursor-pointer rounded-md border border-gray-600 py-10 px-5 shadow-md shadow-gray-600 sm:w-2/3 md:w-1/2">
               <a href={"/story/" + post.slug}>
-                <p className="text-gray-500 __mono text-center italic">
+                <p className="text-center text-gray-500">
                   {post.frontMatter.date}
                 </p>
-                <div className="text-center my-5">
-                  <Image
-                    src={post.frontMatter.thumbnailUrl}
-                    height={200}
-                    width={500}
-                    alt={post.frontMatter.title}
-                    className="rounded-md"
-                    objectFit="cover"
-                  />
-                </div>
-                <div className="px-5">
-                  <h1 className="text-2xl text-gray-300 font-bold mt-5">
+                <div>
+                  <h1 className="mt-1 mb-5 text-center text-3xl font-extrabold text-gray-300">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="text-left text-gray-300 mt-2 mb-5 w-50">
+                  <p className="w-50 mt-5 mb-10 text-left text-gray-300">
                     {post.frontMatter.description}
                   </p>
                 </div>
 
                 {/* read more button */}
                 <div className="text-center">
-                  <buttton className="text-gray-500 __mono border border-gray-500 px-3 text-sm rounded-full">
+                  <buttton className="rounded-full border border-gray-500 px-3 py-2 text-sm font-bold text-gray-500">
                     Read more
                   </buttton>
                 </div>
@@ -54,8 +44,8 @@ const Home = ({ posts }) => {
             src="/loading.svg"
             alt="avatar"
             className="animate-spin-slow"
-            height={33}
-            width={33}
+            height={66}
+            width={66}
             blurDataURL="/loading.svg"
           />
         </div>
