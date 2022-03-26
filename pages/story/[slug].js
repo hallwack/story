@@ -40,11 +40,9 @@ const PostPage = ({
         <Avatar />
         <p className="__mono my-5 text-center text-lg text-gray-400">{date}</p>
         <h1 className="mb-10 text-center text-4xl font-extrabold">{title}</h1>
-        <p className="text-md">
-          <MDXRemote {...mdxSource} components={components} />
-        </p>
+        <MDXRemote {...mdxSource} components={components} />
         <div className="__mono mt-20 items-center justify-center text-center text-xl italic">
-          <footer>thank you anyway, you was reading {title}</footer>
+          <footer>thank you, you just read about {title}</footer>
         </div>
       </div>
     </>
@@ -56,7 +54,7 @@ const getStaticPaths = async () => {
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug: filename.replace(".mdx", ""),
     },
   }));
 
@@ -68,7 +66,7 @@ const getStaticPaths = async () => {
 
 const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
+    path.join("posts", slug + ".mdx"),
     "utf-8"
   );
 
