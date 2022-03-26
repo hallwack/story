@@ -2,8 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import Image from "next/image";
-import { Avatar, EmailForm } from "../components";
+import { Avatar, EmailForm, Footer } from "../components";
 
 const Home = ({ posts }) => {
   return (
@@ -15,40 +14,31 @@ const Home = ({ posts }) => {
         {posts.map((post, index) => (
           <Link href={"/story/" + post.slug} passHref key={index}>
             {/* post card */}
-            <div className="xs:w-2/3 mx-auto my-10 w-3/4 cursor-pointer rounded-md border border-gray-600 py-10 px-5 shadow-md shadow-gray-600 sm:w-2/3 md:w-1/2">
+            <div className="xs:w-2/3 mx-auto my-10 w-5/6 cursor-pointer rounded-lg border-2 border-gray-400 py-10 px-8 sm:w-2/3">
               <a href={"/story/" + post.slug}>
-                <p className="text-center text-gray-500">
+                <p className="__mono text-center text-lg text-gray-400">
                   {post.frontMatter.date}
                 </p>
                 <div>
-                  <h1 className="mt-1 mb-5 text-center text-3xl font-extrabold text-gray-300">
+                  <h1 className="my-5 text-center text-4xl font-extrabold">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="w-50 mt-5 mb-10 text-left text-gray-300">
+                  <p className="text-left text-gray-400">
                     {post.frontMatter.description}
                   </p>
                 </div>
 
                 {/* read more button */}
-                <div className="text-center">
-                  <buttton className="rounded-full border border-gray-500 px-3 py-2 text-sm font-bold text-gray-500">
-                    Read more
+                <div className="mb-5 mt-10 text-center text-gray-400">
+                  <buttton className="__mono text-md rounded-full border-2 border-gray-400 px-10 py-2 font-bold">
+                    Read more &rarr;
                   </buttton>
                 </div>
               </a>
             </div>
           </Link>
         ))}
-        <div className="text-center">
-          <Image
-            src="/loading.svg"
-            alt="avatar"
-            className="animate-spin-slow"
-            height={66}
-            width={66}
-            blurDataURL="/loading.svg"
-          />
-        </div>
+        <Footer />
       </div>
     </>
   );

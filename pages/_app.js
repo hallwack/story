@@ -9,13 +9,13 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/krido.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A place where i can be me." />
+        <meta name="description" content="A place where I can be Me." />
         <link rel="apple-touch-icon" href="krido.jpg" />
         <link rel="manifest" href="/manifest.json" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="yuxxeun &bull; story" />
-        <meta name="twitter:description" content="A place where i can be me." />
+        <meta name="twitter:title" content="story" />
+        <meta name="twitter:description" content="A place where I can be Me." />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
         <meta
@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }) {
           content="https://raw.githubusercontent.com/yuxxeun/yuxxeun.github.io/main/public/gradient.jpg"
         />
 
-        <title>Krido Pambudi</title>
+        <title>Krido</title>
       </Head>
-      <div className="container scroll-smooth">
+      <div className="scroll-smooth">
         <Component {...pageProps} />
       </div>
     </>

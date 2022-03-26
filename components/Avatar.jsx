@@ -11,14 +11,14 @@ export default function Avatar() {
               src="/krido.jpg"
               alt="avatar"
               className="rounded-full"
-              height={130}
-              width={130}
+              height={150}
+              width={150}
               blurDataURL="/krido.jpg"
             />
           </a>
         </Link>
-        <h1 className="pt-5 text-2xl font-extrabold uppercase tracking-widest text-pink-500">
-          krido pambudi
+        <h1 className="pt-5 text-2xl font-extrabold uppercase tracking-widest text-orange-500">
+          krido
         </h1>
       </div>
     </>

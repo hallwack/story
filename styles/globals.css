@@ -7,7 +7,10 @@
 
 body {
   background: rgb(16, 8, 24);
-  color: whitesmoke;
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Inter";
-  font-family: "Inter";
+}
+
+.__mono {
+  font-family: "Space Mono";
 }

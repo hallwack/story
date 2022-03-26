@@ -16,27 +16,37 @@ const PostPage = ({
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/krido.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="A place where I can be Me." />
+        <link rel="apple-touch-icon" href="krido.jpg" />
+        <link rel="manifest" href="/manifest.json" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
-        <meta name="twitter:image" content={thumbnailUrl} />
+        <meta
+          name="twitter:image"
+          content="https://raw.githubusercontent.com/yuxxeun/yuxxeun.github.io/main/public/gradient.jpg"
+        />
         <title>{title}</title>
       </Head>
 
-      <div className="container-md mx-5 px-5 md:mx-20 md:px-20 mt-10">
+      <div className="xs:w-2/3 my-10 mx-auto w-5/6 items-center justify-center px-5 py-5 sm:w-2/3">
         <Avatar />
-        <p className="__mono text-center text-md font-thin mt-5 mb-3 px-5 italic">
-          {date}
+        <p className="__mono my-5 text-center text-lg text-gray-400">{date}</p>
+        <h1 className="mb-10 text-center text-4xl font-extrabold">{title}</h1>
+        <p className="text-md">
+          <MDXRemote {...mdxSource} components={components} />
         </p>
-        <h1 className="text-center font-bold text-3xl mb-8">{title}</h1>
-        <MDXRemote {...mdxSource} components={components} />
-        <footer className="italic text-center my-10 __mono text-lg font-semibold">
-          thank you for coming, drink your water now!
-        </footer>
+        <div className="__mono mt-20 items-center justify-center text-center text-xl italic">
+          <footer>thank you anyway, you was reading {title}</footer>
+        </div>
       </div>
-      <EmailForm />
     </>
   );
 };
@@ -46,7 +56,7 @@ const getStaticPaths = async () => {
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace(".mdx", ""),
+      slug: filename.replace(".md", ""),
     },
   }));
 
@@ -58,7 +68,7 @@ const getStaticPaths = async () => {
 
 const getStaticProps = async ({ params: { slug } }) => {
   const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".mdx"),
+    path.join("posts", slug + ".md"),
     "utf-8"
   );
 
