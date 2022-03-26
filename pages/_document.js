@@ -5,9 +5,8 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/krido.jpg" />
-        <link rel="apple-touch-icon" href="krido.jpg" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

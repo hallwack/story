@@ -5,25 +5,17 @@ const Ilegal = () => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <link rel="icon" href="/krido.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A place where I can be Me." />
-        <link rel="apple-touch-icon" href="krido.jpg" />
-        <link rel="manifest" href="/manifest.json" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="🚬 451 ㅡ Unavailable For Legal Reasons"
+          content="451 ㅡ Unavailable For Legal Reasons"
         />
         <meta name="twitter:description" content="A place where I can be Me." />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/yuxxeun/yuxxeun.github.io/main/public/gradient.jpg"
+          content="https://raw.githubusercontent.com/yuxxeun/zea/main/image/gradient.jpg"
         />
 
         <title>451 ㅡ Unavailable For Legal Reasons</title>

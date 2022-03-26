@@ -6,21 +6,21 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/krido.jpg" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="A place where I can be Me." />
-        <link rel="apple-touch-icon" href="krido.jpg" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="story" />
+        <meta name="twitter:title" content="Krido" />
         <meta name="twitter:description" content="A place where I can be Me." />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
         <meta
           name="twitter:image"
-          content="https://raw.githubusercontent.com/yuxxeun/yuxxeun.github.io/main/public/gradient.jpg"
+          content="https://raw.githubusercontent.com/yuxxeun/zea/main/image/gradient.jpg"
         />
 
         <title>Krido</title>
