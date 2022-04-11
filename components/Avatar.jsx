@@ -17,7 +17,7 @@ export default function Avatar() {
             />
           </a>
         </Link>
-        <h1 className="pt-5 text-2xl font-extrabold uppercase tracking-widest text-orange-500">
+        <h1 className="pt-5 text-2xl font-extrabold uppercase tracking-widest text-fuchsia-500">
           krido
         </h1>
       </div>

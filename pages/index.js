@@ -29,7 +29,7 @@ const Home = ({ posts }) => {
                 </div>
 
                 {/* read more button */}
-                <div className="mb-5 mt-10 text-center text-gray-400">
+                <div className="mb-5 mt-10 text-center text-fuchsia-500">
                   <buttton className="__mono text-md rounded-full border-2 border-gray-400 px-10 py-2 font-bold">
                     Read more &rarr;
                   </buttton>

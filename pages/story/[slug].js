@@ -41,8 +41,8 @@ const PostPage = ({
         <p className="__mono my-5 text-center text-lg text-gray-400">{date}</p>
         <h1 className="mb-10 text-center text-4xl font-extrabold">{title}</h1>
         <MDXRemote {...mdxSource} components={components} />
-        <div className="__mono mt-20 items-center justify-center text-center text-xl italic">
-          <footer>thank you, you just read about {title}</footer>
+        <div className="__mono mt-10 items-center justify-center text-center text-3xl italic">
+          <footer>∞</footer>
         </div>
       </div>
     </>

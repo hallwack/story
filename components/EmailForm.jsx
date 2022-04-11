@@ -19,7 +19,7 @@ export default function EmailForm() {
       <p className="my-5">
         or grab the{" "}
         <Link href="/feed.xml">
-          <a className="text-orange-500 underline">RSS feed</a>
+          <a className="text-fuchsia-500 underline">RSS feed</a>
         </Link>
       </p>
     </div>

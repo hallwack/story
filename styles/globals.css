@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 body {
-  background: rgb(16, 8, 24);
+  background: #000;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Inter";
 }
