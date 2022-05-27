@@ -4,22 +4,12 @@ import Link from "next/link";
 export default function Avatar() {
   return (
     <>
-      <div className="mt-5 pb-5 text-center focus:outline-none">
-        <Link href="/">
-          <a>
-            <Image
-              src="/krido.jpg"
-              alt="avatar"
-              className="rounded-full"
-              height={150}
-              width={150}
-              blurDataURL="/krido.jpg"
-            />
-          </a>
-        </Link>
-        <h1 className="pt-5 text-2xl font-extrabold uppercase tracking-widest text-fuchsia-500">
-          krido
-        </h1>
+      <div className="xs:w-2/3 mx-auto mt-5 w-5/6 items-center pb-5 text-center focus:outline-none">
+        <div>
+          <h1 className="tracking-md animate-pulse text-center font-basement text-7xl font-extrabold text-black">
+            Alphabet.
+          </h1>
+        </div>
       </div>
     </>
   );

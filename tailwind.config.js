@@ -5,7 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'space-mono': ['Space Mono']
+      'space-mono': ['Space Mono'],
+      basement: "BasementGrotesque-Black, cursive",
     },
     extend: {
       animation: {

@@ -2,35 +2,34 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import { Avatar, EmailForm, Footer } from "../components";
+import { Avatar, Footer } from "../components";
 
 const Home = ({ posts }) => {
   return (
     <>
       <div className="py-10">
         <Avatar />
-        <EmailForm />
 
         {posts.map((post, index) => (
           <Link href={"/story/" + post.slug} passHref key={index}>
             {/* post card */}
-            <div className="xs:w-2/3 mx-auto my-10 w-5/6 cursor-pointer rounded-lg border-2 border-gray-400 py-10 px-8 sm:w-2/3">
+            <div className="mx-auto my-10 w-4/5 cursor-pointer rounded-lg border-2 border-gray-400 py-10 px-8">
               <a href={"/story/" + post.slug}>
-                <p className="__mono text-center text-lg text-gray-400">
+                <p className="__mono text-center text-lg font-semibold text-slate-500">
                   {post.frontMatter.date}
                 </p>
                 <div>
-                  <h1 className="my-5 text-center text-4xl font-extrabold">
+                  <h1 className="my-5 text-center font-basement text-4xl font-extrabold text-slate-900">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="text-left text-gray-400">
+                  <p className="text-left font-basement text-slate-500">
                     {post.frontMatter.description}
                   </p>
                 </div>
 
                 {/* read more button */}
-                <div className="mb-5 mt-10 text-center text-fuchsia-500">
-                  <buttton className="__mono text-md rounded-full border-2 border-gray-400 px-10 py-2 font-bold">
+                <div className="mb-5 mt-10 text-center text-slate-900">
+                  <buttton className="text-md rounded-full border-2 border-gray-400 px-10 py-2 font-basement font-bold">
                     Read more &rarr;
                   </buttton>
                 </div>

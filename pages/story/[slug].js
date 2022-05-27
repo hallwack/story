@@ -36,13 +36,21 @@ const PostPage = ({
         <title>{title}</title>
       </Head>
 
-      <div className="xs:w-2/3 my-10 mx-auto w-5/6 items-center justify-center px-5 py-5 sm:w-2/3">
-        <Avatar />
-        <p className="__mono my-5 text-center text-lg text-gray-400">{date}</p>
-        <h1 className="mb-10 text-center text-4xl font-extrabold">{title}</h1>
-        <MDXRemote {...mdxSource} components={components} />
-        <div className="__mono mt-10 items-center justify-center text-center text-3xl italic">
-          <footer>∞</footer>
+      <div className="my-10 mx-auto w-4/5 items-center justify-center px-5 py-5">
+        <p className="__mono my-5 text-center text-lg font-semibold text-slate-500">
+          {date}
+        </p>
+        <h1 className="mb-10 text-center text-4xl font-extrabold text-slate-900">
+          {title}
+        </h1>
+        <div className="text-slate-900">
+          <MDXRemote {...mdxSource} components={components} />
+        </div>
+
+        <div className="__mono mt-10 items-center justify-center text-center text-3xl">
+          <footer className="font-basement text-7xl font-extrabold text-pink-600">
+            ⋯
+          </footer>
         </div>
       </div>
     </>

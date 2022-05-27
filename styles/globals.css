@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "BasementGrotesque-Black";
+    src: url("/fonts/Basement/BasementGrotesque-Black.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 body {
-  background: #000;
+  background: whitesmoke;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Inter";
 }
