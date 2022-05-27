@@ -15,7 +15,7 @@ const Home = ({ posts }) => {
             {/* post card */}
             <div className="mx-auto my-10 w-4/5 cursor-pointer rounded-lg border-2 border-gray-400 py-10 px-8">
               <a href={"/story/" + post.slug}>
-                <p className="__mono text-center text-lg font-semibold text-slate-500">
+                <p className="text-center font-space text-lg font-semibold text-slate-500">
                   {post.frontMatter.date}
                 </p>
                 <div>

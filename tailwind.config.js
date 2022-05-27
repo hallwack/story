@@ -5,14 +5,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'space-mono': ['Space Mono'],
       basement: "BasementGrotesque-Black, cursive",
+      space: "SpaceMono-Regular, cursive",
     },
     extend: {
       animation: {
-        'spin-slow': 'spin 10s infinite linear'
-      }
+        "spin-slow": "spin 10s infinite linear",
+      },
     },
   },
   plugins: [],
-}
+};

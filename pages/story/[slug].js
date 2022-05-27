@@ -37,10 +37,10 @@ const PostPage = ({
       </Head>
 
       <div className="my-10 mx-auto w-4/5 items-center justify-center px-5 py-5">
-        <p className="__mono my-5 text-center text-lg font-semibold text-slate-500">
+        <p className="font-space my-5 text-center text-lg font-semibold text-slate-500">
           {date}
         </p>
-        <h1 className="mb-10 text-center text-4xl font-extrabold text-slate-900">
+        <h1 className="mb-10 text-center font-basement text-4xl font-extrabold text-slate-900">
           {title}
         </h1>
         <div className="text-slate-900">
