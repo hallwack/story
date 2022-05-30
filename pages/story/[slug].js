@@ -6,6 +6,7 @@ import matter from "gray-matter";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { Avatar, EmailForm } from "../../components";
 import Head from "next/head";
+import 'prismjs/themes/prism-okaidia.css';  
 
 const components = { Avatar, EmailForm, SyntaxHighlighter };
 
@@ -21,7 +22,7 @@ const PostPage = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="A place where I can be Me." />
-        <link rel="apple-touch-icon" href="krido.jpg" />
+        <link rel="apple-touch-icon" href="/krido.jpg" />
         <link rel="manifest" href="/manifest.json" />
 
         <meta name="twitter:card" content="summary_large_image" />

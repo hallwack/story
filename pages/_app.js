@@ -1,7 +1,13 @@
+import {useEffect} from 'react'
+import Prism from "Prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
   return (
     <>
       <Head>
