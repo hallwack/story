@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Prism from "Prismjs";
+import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
 import Head from "next/head";
