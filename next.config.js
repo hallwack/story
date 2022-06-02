@@ -1,16 +1,14 @@
-const markdownIt = require('markdown-it');
-const markdownItPrism = require('markdown-it-prism');
+const withPWA = require("next-pwa");
 
-module.exports = {
-  webpack: configuration => {
-    configuration.module.rules.push({
-    test: /\.md$/,
-    loader: 'frontmatter-markdown-loader',
-    options: {
-      markdownIt: markdownIt({ html: true }).use(markdownItPrism),
-  }});
-    return configuration;
-  },
+const nextConfig = withPWA({
   reactStrictMode: true,
-  swcMinify: true
-}
+  swcMinify: true,
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    scope: "/",
+  },
+});
+
+module.exports = nextConfig;

@@ -1,7 +1,7 @@
 {
-  "name": "story",
-  "description": "A place where i can be me.",
-  "homepage": "https://github.com/yuxxeun/story",
+  "name": "oxs",
+  "description": "thought, stories and ideas",
+  "homepage": "https://github.com/yuxxeun/oxs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
