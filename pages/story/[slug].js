@@ -45,7 +45,7 @@ const PostPage = ({
         <h1 className="mb-10 text-center font-basement text-4xl font-extrabold text-slate-900">
           {title}
         </h1>
-        <div className="text-slate-900 text-lg __mono">
+        <div className="text-slate-900 text-lg font-space">
           <MDXRemote {...mdxSource} components={components} />
         </div>
 
