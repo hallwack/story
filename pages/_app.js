@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import Prism from "Prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/manifest.json" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krido" />
+        <meta name="twitter:title" content="oxs" />
         <meta name="twitter:description" content="A place where I can be Me." />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
           content="https://raw.githubusercontent.com/yuxxeun/zea/main/image/gradient.jpg"
         />
 
-        <title>Krido</title>
+        <title>oxs</title>
       </Head>
       <div className="scroll-smooth">
         <Component {...pageProps} />

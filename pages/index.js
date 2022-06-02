@@ -22,14 +22,14 @@ const Home = ({ posts }) => {
                   <h1 className="my-5 text-center font-basement text-4xl font-extrabold text-slate-900">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="text-left font-basement text-slate-500">
+                  <p className="text-left text-lg __mono text-slate-500">
                     {post.frontMatter.description}
                   </p>
                 </div>
 
                 {/* read more button */}
                 <div className="mb-5 mt-10 text-center text-slate-900">
-                  <buttton className="text-md rounded-full border-2 border-gray-400 px-10 py-2 font-basement font-bold">
+                  <buttton className="text-md rounded-full border-2 border-gray-400 px-10 py-2 __mono font-bold">
                     Read more &rarr;
                   </buttton>
                 </div>
