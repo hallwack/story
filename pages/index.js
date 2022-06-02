@@ -22,7 +22,7 @@ const Home = ({ posts }) => {
                   <h1 className="my-5 text-center font-basement text-4xl font-extrabold text-slate-900">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="text-left text-lg __mono text-slate-500">
+                  <p className="text-left text-lg font-space text-slate-500">
                     {post.frontMatter.description}
                   </p>
                 </div>
