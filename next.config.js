@@ -9,6 +9,15 @@ const nextConfig = withPWA({
     skipWaiting: true,
     scope: "/",
   },
+  async redirects() {
+    return [
+      {
+        source: "/twitter",
+        destination: "https://twitter.com/yuxxeun",
+        permanent: true,
+      },
+    ];
+  }
 });
 
 module.exports = nextConfig;
