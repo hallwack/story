@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
@@ -6,8 +6,8 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    Prism.highlightAll()
-  }, [])
+    Prism.highlightAll();
+  }, []);
   return (
     <>
       <Head>

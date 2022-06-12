@@ -3,6 +3,7 @@ const withPWA = require("next-pwa");
 const nextConfig = withPWA({
   reactStrictMode: true,
   swcMinify: true,
+  concurrentFeatures: true,
   pwa: {
     dest: "public",
     register: true,
@@ -17,7 +18,7 @@ const nextConfig = withPWA({
         permanent: true,
       },
     ];
-  }
+  },
 });
 
 module.exports = nextConfig;
