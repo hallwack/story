@@ -6,7 +6,7 @@ export default function EmailForm() {
       <h3 className="my-5 font-basement">
         anyway, you can subscribe to get future posts from Krido
       </h3>
-      <form className="flex justify-center sm:flex">
+      {/* <form className="flex justify-center sm:flex">
         <div className="rounded-full border-2 border-white">
           <input
             type="email"
@@ -15,7 +15,7 @@ export default function EmailForm() {
             disabled
           />
         </div>
-      </form>
+      </form> */}
       <p className="my-5">
         or grab the{" "}
         <Link href="/feed.xml">

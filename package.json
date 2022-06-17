@@ -1,9 +1,14 @@
 {
   "name": "oxs",
-  "description": "thought, stories and ideas",
+  "description": "Driven by the desire to write non-standard & meaningful experiences.",
   "homepage": "https://github.com/yuxxeun/oxs",
-  "version": "0.0.1",
+  "version": "3.3.3",
   "private": true,
+  "author": "@yuxxeun",
+  "keyword": [
+    "oxs",
+    "yuxxeun digital garden"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

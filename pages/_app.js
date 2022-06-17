@@ -1,12 +1,20 @@
 import { useEffect } from "react";
+import Head from "next/head";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
-import Head from "next/head";
+
+// import AOS from "aos"
+// import "aos/dist/aos.css"
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     Prism.highlightAll();
+    // AOS.init({
+    //   easing: "ease-out-cubic",
+    //   once: true,
+    //   offset: 50,
+    // });
   }, []);
   return (
     <>
@@ -20,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/manifest.json" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="oxs" />
+        <meta name="twitter:title" content="OXS" />
         <meta name="twitter:description" content="thought, stories and ideas" />
         <meta name="twitter:creator" content="@yuxxeun" />
         <meta name="twitter:site" content="@yuxxeun" />
@@ -29,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           content="https://raw.githubusercontent.com/yuxxeun/zea/main/image/gradient.jpg"
         />
 
-        <title>oxs</title>
+        <title>OXS</title>
       </Head>
       <div className="scroll-smooth">
         <Component {...pageProps} />

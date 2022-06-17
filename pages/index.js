@@ -23,21 +23,21 @@ const Home = ({ posts }) => {
             {/* post card */}
             <div className="mx-auto my-10 w-4/5 cursor-pointer rounded-lg border-2 border-gray-400 py-10 px-8">
               <a href={"/story/" + post.slug}>
-                <p className="text-center font-space text-lg font-semibold text-slate-500">
+                <p className="text-center font-space text-lg font-semibold text-pink-700">
                   {post.frontMatter.date}
                 </p>
                 <div>
                   <h1 className="my-5 text-center font-basement text-4xl font-extrabold text-slate-900">
                     {post.frontMatter.title}
                   </h1>
-                  <p className="text-left font-space text-lg text-slate-500">
+                  <p className="text-left font-space text-2xl text-slate-700">
                     {post.frontMatter.description}
                   </p>
                 </div>
 
                 {/* read more button */}
                 <div className="mb-5 mt-10 text-center text-slate-900">
-                  <buttton className="text-md __mono rounded-full border-2 border-gray-400 px-10 py-2 font-bold">
+                  <buttton className="rounded-xl border-2 border-gray-400 px-10 py-2 font-space text-lg font-bold">
                     Read more &rarr;
                   </buttton>
                 </div>

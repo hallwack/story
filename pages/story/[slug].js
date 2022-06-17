@@ -6,15 +6,12 @@ import matter from "gray-matter";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { Avatar, EmailForm } from "../../components";
 import Head from "next/head";
-import 'prismjs/themes/prism-okaidia.css';  
-import Link from 'next/link'
+import "prismjs/themes/prism-okaidia.css";
+import Link from "next/link";
 
 const components = { Avatar, EmailForm, SyntaxHighlighter };
 
-const PostPage = ({
-  frontMatter: { title, date, description, thumbnailUrl },
-  mdxSource,
-}) => {
+const PostPage = ({ frontMatter: { title, date, description }, mdxSource }) => {
   return (
     <>
       <Head>
@@ -39,20 +36,20 @@ const PostPage = ({
       </Head>
 
       <div className="my-10 mx-auto w-4/5 items-center justify-center lg:px-5 lg:py-5">
-        <p className="font-space my-5 text-center text-lg font-semibold text-slate-500">
+        <p className="my-5 text-center font-space text-lg font-semibold text-pink-700">
           {date}
         </p>
         <h1 className="mb-10 text-center font-basement text-4xl font-extrabold text-slate-900">
           {title}
         </h1>
-        <div className="text-slate-900 text-lg font-space">
+        <div className="font-space text-xl text-slate-900">
           <MDXRemote {...mdxSource} components={components} />
         </div>
 
-        <div className="__mono mt-10 md:mt-10 sm:mt-10 items-center text-center justify-center">
-          <buttton className="text-md text-slate-900 font-semibold rounded-lg border border-gray-400 px-7 py-2 hover:cursor-pointer hover:text-slate-400">
+        <div className="mt-10 items-center justify-center text-center font-space sm:mt-10 md:mt-10">
+          <buttton className="text-md rounded-xl border border-gray-400 px-7 py-2 font-bold text-slate-900 hover:cursor-pointer hover:text-slate-400">
             <Link href="/">
-              <a>Home &rarr;</a>
+              <a>Back to home &rarr;</a>
             </Link>
           </buttton>
         </div>
