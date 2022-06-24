@@ -4,17 +4,17 @@ import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "../styles/globals.css";
 
-// import AOS from "aos"
-// import "aos/dist/aos.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     Prism.highlightAll();
-    // AOS.init({
-    //   easing: "ease-out-cubic",
-    //   once: true,
-    //   offset: 50,
-    // });
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
   }, []);
   return (
     <>
