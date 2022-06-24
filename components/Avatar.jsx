@@ -7,7 +7,7 @@ export default function Avatar() {
     <>
       <div className="xs:w-2/3 mx-auto mt-5 w-5/6 items-center pb-5 text-center focus:outline-none"
 	    data-aos="fade-up"
-    data-aos-offset="200"
+    	    data-aos-offset="200"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-easing="ease-in-out"
